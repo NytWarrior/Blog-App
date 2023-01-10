@@ -1,4 +1,0 @@
-$(() => {
-
-    $('#navbar').load('/navbar.html')
-})
