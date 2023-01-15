@@ -3,17 +3,17 @@
 
     <form>
         <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping">Username</span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+            <span class="input-group-text" id="addon-wrapping">Title</span>
+            <input type="text" id="postTitle" class="form-control" placeholder="Title of the post" aria-label="Username"
                 aria-describedby="addon-wrapping">
         </div>
         <div class="input-group">
             <span class="input-group-text">About</span>
-            <textarea class="form-control" placeholder="Write Something about the post"
+            <textarea id="postBody" class="form-control" placeholder="Write Something about the post"
                 aria-label="With textarea"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" id="btnCreatePost" class="btn btn-primary">Submit</button>
     </form>
 </div>
 

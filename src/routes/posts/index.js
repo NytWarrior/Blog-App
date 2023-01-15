@@ -7,7 +7,7 @@ const {
 const route = Router()
 
 route.get('/', async (req, res) => {
-    const posts = await showAllPosts()
+    const posts = await showAllPosts(req.query)
     res.status(200).send(posts)
 })
 

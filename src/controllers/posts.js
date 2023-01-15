@@ -10,10 +10,13 @@ async function createNewPost(userId, title, body) {
     return post
 }
 
-
 async function showAllPosts(query) {
+    let where = {}
+    if (query.userId) { where.userId = query.userId }
+
     const posts = await Posts.findAll({
-        include: [Users]
+        include: [Users],
+        where
     })
     return posts
 }
@@ -25,24 +28,24 @@ module.exports = {
 
 // Test case
 
-async function task() {
-    // console.log(
-    //     await createNewPost(
-    //         1,
-    //         'This is a sample post',
-    //         'Body of the post'
-    //     )
-    // ),
-    //     console.log(
-    //         await createNewPost(
-    //             2,
-    //             'Another sample post',
-    //             'Body of another post'
-    //         )
-    //     )
-    const posts = await showAllPosts()
-    for (let p of posts) {
-        console.log(`${p.title}\nAuthor: ${p.user.username}\n${p.body}\n\n`)
-    }
-}
-task()
+// async function task() {
+//     // console.log(
+//     //     await createNewPost(
+//     //         1,
+//     //         'This is a sample post',
+//     //         'Body of the post'
+//     //     )
+//     // ),
+//     //     console.log(
+//     //         await createNewPost(
+//     //             2,
+//     //             'Another sample post',
+//     //             'Body of another post'
+//     //         )
+//     //     )
+    // const posts = await showAllPosts()
+    // for (let p of posts) {
+    //     console.log(`${p.title}\nAuthor: ${p.user.username}\n${p.body}\n\n`)
+//     }
+// }
+// task()
