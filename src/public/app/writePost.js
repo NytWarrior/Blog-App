@@ -6,8 +6,8 @@ $('#btnCreatePost').click(() => {
 
     $.post('./api/posts', { userId, title, body }, (data) => {
         $('#content').load('./components/myPosts.html')
-        $('.nav-item .active').removeClass('active')
-        $("[data-component = 'myPosts']").addClass('active')
+        // $('.nav-item .active').removeClass('active')
+        // $("[data-component = 'myPosts']").addClass('active')
     })
 
 })

@@ -2,15 +2,27 @@
     position: sticky;
     top: 0px;
     z-index: 1;
+    background-color: #292c2f;
+}
+
+#navbar .nav-link{
+    color: aliceblue;
+}
+
+#navbar .navbar-brand{
+    color: aliceblue;
+}
+#nav-username{
+    color: aliceblue;
+}
+#navbar-toggler{
+    color: aliceblue;
 }
 
 #footer {
-    padding-bottom: 1.5rem;
     padding-top: 0.5rem;
     position: sticky;
     bottom: 0px;
-    background-color: #dddddd;
-    
 }
 
 #content {
