@@ -1,5 +1,16 @@
-# Social Media Sample Project
+# Blog App Project
 
+## Introduction
+
+The BlogApp is a blog writing website designed using Full Stack Web Development through Back-End Technology (MySql, ExpressJS, NodeJS, Sequelize).
+
+Users can write their blog anonymously and can read other users blog and can like and comment on it.
+
+This website is completely Responsive across all the Devices.
+
+
+  <br/>
+  <br/>
 ## Database Setup
 
 ```mysql
@@ -78,3 +89,21 @@ src
    - userId
    - title
    - body
+
+
+## Screenshot
+
+<p align="justify">
+<img height="200" width="400" src="./src/screenshot/write-blog1.png">
+<img height="200" width="400" src="./src/screenshot/recent-blogs1.png">
+
+<img height="200" width="400" src="./src/screenshot/write-blog2.png">
+<img height="200" width="400" src="./src/screenshot/recent-blogs2.png">
+<img height="200" width="400" src="./src/screenshot/my-blogs1.png">
+<img height="200" width="400" src="./src/screenshot/view-blog1.png">
+<img height="200" width="400" src="./src/screenshot/view-blog2.png">
+
+</p>
+<br/>
+
+I hope you like the project. Thanks for reading :)
